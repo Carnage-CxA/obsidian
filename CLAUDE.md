@@ -38,8 +38,11 @@ Obsidian must not look AI-generated. Before writing any UI: read `docs/DESIGN.md
 - Tests for the topology/state engine are mandatory — it is the part that must never be wrong.
 
 ## Agents (.claude/agents/)
-chief-operator (orchestrates, never builds) · builder · qa-engineer · adversarial-critic · system-fixer · eval-designer · improvement-analyst · context-librarian · research-scout · visual-director.
+chief-operator (orchestrates, never builds) · builder · qa-engineer · adversarial-critic · system-fixer · eval-designer · improvement-analyst · context-librarian · research-scout · visual-director · data-architect (registry, topology, schema, importers) · cx-authority (is the engineering physically right?).
 For any multi-step task, follow chief-operator's protocol.
+- Any change to stored data, schema or importers → data-architect designs or reviews it.
+- Any topology rule, state-engine behavior or simulator verdict → cx-authority must return CORRECT before qa-engineer can PASS it.
+- New agents are added only when a phase needs one (see `docs/AGENTS.md`), never speculatively.
 
 ## Handoffs to Edward — required
 When a step needs Edward to act, or would go better in another tool or surface, stop and give a SWITCH block before continuing. Format and triggers are in `docs/WORKFLOW.md`. Never leave him to guess what to do next.
