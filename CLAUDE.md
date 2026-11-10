@@ -26,6 +26,9 @@ Work follows `docs/ROADMAP.md`. Rules:
 ## Design (summary — full rules in docs/DESIGN.md)
 Obsidian must not look AI-generated. Before writing any UI: read `docs/DESIGN.md`, use only its tokens, and check the banned list. `visual-director` owns the look; nobody else changes tokens.
 
+## Storage — non-negotiable
+Everything lives on the Extreme drive under `X:\03 PROJECTS\OBSIDIAN\`. **Never OneDrive**, never the tablet's Documents/Desktop/Downloads. Every file you create goes into its folder per `docs/STORAGE.md`. If something is in the wrong place, move it and say so.
+
 ## Data rules
 - Real client project data (drawings, one-lines, tag lists, scripts from Vantage, Project Plaid, etc.) is **never committed** to this repo. Use `fixtures/` with sanitized or synthetic data. Real data loads at runtime from the user's own storage.
 - Asset tags are displayed exactly as the source document writes them. Never "clean up" nomenclature.

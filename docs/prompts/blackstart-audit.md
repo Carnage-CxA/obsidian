@@ -1,17 +1,20 @@
 # Prompt: Blackstart audit
 
-Run in the terminal from `~/projects/obsidian`, with Blackstart attached:
+Run in the terminal from `X:\03 PROJECTS\OBSIDIAN\obsidian`, with Blackstart attached:
 
 ```
-claude --add-dir ../blackstart
+cd "X:\03 PROJECTS\OBSIDIAN\obsidian"
+claude --add-dir "C:\Users\EdwardRivera\projects\blackstart"
 /effort ultracode
 ```
+
+Blackstart exists in two places (`C:\Users\EdwardRivera\projects\blackstart` and `X:\03 PROJECTS\BLACKSTART`). Step 0 of the audit: confirm which copy matches GitHub `Carnage-CxA/blackstart` and audit that one.
 
 Then paste everything below the line.
 
 ---
 
-Audit the Blackstart codebase (the added directory `../blackstart`) to decide what Obsidian keeps, rebuilds or kills. Read `CLAUDE.md` and `docs/ROADMAP.md` in this repo first: Obsidian's two must-haves are the Site Map and the Sequence Simulator, both on one asset registry + topology model.
+Audit the Blackstart codebase (the added Blackstart directory) to decide what Obsidian keeps, rebuilds or kills. Read `CLAUDE.md` and `docs/ROADMAP.md` in this repo first: Obsidian's two must-haves are the Site Map and the Sequence Simulator, both on one asset registry + topology model.
 
 Do not modify anything in Blackstart. Read only.
 

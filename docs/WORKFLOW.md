@@ -4,7 +4,8 @@
 
 | | War room | Factory |
 |---|---|---|
-| Where | Claude chat (claude.ai / desktop app), chat "Obsidian Workup" | Claude Code in the terminal, inside `~/projects/obsidian` |
+| Where | Claude chat (claude.ai / desktop app), chat "Obsidian Workup" | Claude Code in the terminal, inside `X:\03 PROJECTS\OBSIDIAN\obsidian` |
+| Storage | Extreme drive only (see STORAGE.md) | Extreme drive only |
 | For | Strategy, architecture, decisions, audits, research, design direction, reviewing results | Writing code, running tests, building screens, migrations, deploys |
 | Writes to repo | `docs/` (decisions, roadmap, design, prompts) | Code, tests, and `docs/` status updates |
 
