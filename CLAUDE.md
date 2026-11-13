@@ -34,6 +34,13 @@ Everything lives on the Extreme drive under `X:\03 PROJECTS\OBSIDIAN\`. **Never 
 - Asset tags are displayed exactly as the source document writes them. Never "clean up" nomenclature.
 - Every fact the simulator relies on carries its source (document, sheet, revision).
 
+## Stack — decided (details in docs/DECISIONS.md)
+- v1 is local-first: runs on localhost, one database per client project on X:. No hosted database, no deploys, until Edward says so.
+- Engine, importer, fixtures and validators are plain TypeScript packages: no Next, React or database imports inside them.
+- **Postgres stores, never computes.** No graph or traversal logic in SQL functions, views or triggers.
+- Surrogate ids everywhere. The client's tag is data, never a key, and is never rewritten.
+- Nothing is ported from Blackstart except what the audit ledger marks KEEP or REBUILD. Never its data, migrations or git history.
+
 ## Engineering standards
 - Simplest thing that meets the done-criteria. No speculative abstraction, no placeholder screens, no fake data dressed as real.
 - Run what you build. "Should work" is not done.
