@@ -1,7 +1,7 @@
 # Blackstart audit — what Obsidian keeps, rebuilds or kills
 
 Date: 2026-11-10 · Phase 0 deliverable (ROADMAP: "Blackstart audit") · Prompt: `docs/prompts/blackstart-audit.md`
-Status: **draft for Edward's keep/kill calls** — nothing below is decided until it lands in `DECISIONS.md`.
+Status: **accepted by Edward 2026-11-13** — ledger (§8) accepted as written; the calls are logged in `DECISIONS.md`.
 
 ## Verdict in one paragraph
 

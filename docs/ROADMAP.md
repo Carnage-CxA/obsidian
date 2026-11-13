@@ -2,7 +2,7 @@
 
 One phase at a time. A phase closes only when every exit criterion has evidence and qa-engineer returns PASS.
 
-**Current phase: 0 — Foundation**
+**Current phase: 1 — Data spine** (Phase 0 closed 2026-11-13, qa-engineer PASS)
 
 ---
 
@@ -13,7 +13,7 @@ Goal: know exactly what to keep from Blackstart, lock the look, and pick the sta
 - [x] Stack decision recorded in DECISIONS.md: local-first, TypeScript engine, PGlite (2026-11-13)
 - [x] Design system v1: palette, type, spacing, components, banned list confirmed by Edward (`docs/DESIGN.md`, 2026-11-13)
 
-Exit: audit accepted by Edward; stack + design decisions logged.
+Exit: audit accepted by Edward; stack + design decisions logged. **Closed 2026-11-13.**
 
 ## Phase 1 — Data spine
 Goal: one asset registry and one topology model everything else reads.
